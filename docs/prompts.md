@@ -6,22 +6,6 @@
 
 "¿Cuál es la siguiente tarea en la que debería trabajar? Por favor, considera las dependencias y prioridades."
 
-## Implementando una tarea específica
-
-"Me gustaría implementar la tarea 4. ¿Puedes ayudarme a entender qué se necesita hacer y cómo abordarlo?"
-
-## Viendo múltiples tareas
-
-"¿Puedes mostrarme las tareas 1, 3 y 5 para que pueda entender su relación?"
-
-"Necesito ver el estado de las tareas 44, 55 y sus subtareas. ¿Puedes mostrármelas?"
-
-"Muéstrame las tareas 10, 12 y 15 y dame algunas acciones por lotes que pueda realizar sobre ellas."
-
-## Gestionando subtareas
-
-"Necesito regenerar las subtareas para la tarea 3 con un enfoque diferente. ¿Puedes ayudarme a borrarlas y regenerarlas?"
-
 ## Manejando cambios
 
 "He decidido usar MongoDB en lugar de PostgreSQL. ¿Puedes actualizar todas las tareas futuras para reflejar este cambio?"
