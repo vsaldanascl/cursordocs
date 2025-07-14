@@ -38,7 +38,7 @@ Cada archivo representa una unidad de trabajo atómica, coherente y ejecutable.
 - **Directriz de Implementación**: Antes de iniciar, es **obligatorio** consultar `@arquitectura.md` y `@frontend.md` para alinear la implementación con las decisiones de diseño establecidas. El objetivo es asegurar la coherencia y evitar regresiones en la funcionalidad existente.
 - **Uso de Herramientas**: Cuando la tarea involucre testing de interfaz de usuario o interacciones con la base de datos, se debe priorizar el uso de los MCP (Managed Code Plugins) de Playwright y Supabase.
 - **Criterios de Aceptación**: Lista clara y verificable de condiciones necesarias para considerar la tarea completada.
-- **Plan de Verificación**: Al finalizar la implementación, se deben detallar las pruebas (unitarias, de integración o E2E) que se realizarán para validar que la tarea cumple con los criterios de aceptación y no introduce regresiones.
+- **Plan de Verificación**: Al finalizar la implementación, se deben detallar las pruebas automatizadas (unitarias, de integración o E2E) que **Cursor ejecutará automáticamente** mediante scripts de testing, comandos npm/yarn, o MCPs disponibles (Playwright, Supabase) para validar que la tarea cumple con los criterios de aceptación y no introduce regresiones.
 - **Archivos Afectados**: Archivos que serán creados o modificados.
 - **Dependencias**: Otras tareas que deben completarse previamente (referenciadas por número o nombre de archivo).
 - **Tiempo Estimado**: Duración estimada para completar la tarea.
