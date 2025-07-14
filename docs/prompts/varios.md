@@ -21,3 +21,4 @@
 
 ### Desarrollo de Funcionalidades en Paralelo
 "Necesito trabajar en las funcionalidades de autenticación y pagos simultáneamente. ¿Cómo debería organizar las tareas?"
+
