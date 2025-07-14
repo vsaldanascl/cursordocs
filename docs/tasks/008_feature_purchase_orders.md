@@ -1,0 +1,21 @@
+# Tarea 008: Feature - Gestión de Órdenes de Compra
+
+- **Descripción**: Desarrollar la funcionalidad para generar, gestionar y dar seguimiento a las órdenes de compra.
+- **Criterios de Aceptación**:
+  - Las órdenes de compra se generan automáticamente a partir de la selección en el comparador de precios.
+  - Las órdenes se separan por proveedor.
+  - Los usuarios pueden editar y personalizar las órdenes antes de confirmarlas.
+  - Las órdenes se pueden exportar a PDF y Excel.
+  - Se mantiene un historial completo de órdenes de compra.
+- **Archivos Afectados**:
+  - `app/routes/orders/web.py`
+  - `app/routes/orders/api.py`
+  - `app/services/order_manager.py`
+  - `app/services/pdf_generator.py`
+  - `templates/orders/`
+- **Dependencias**: `007_feature_price_comparison.md`
+- **Tiempo Estimado**: 10 horas.
+- **Notas Técnicas**:
+  - La generación de PDF puede hacerse con librerías como `WeasyPrint` o `ReportLab`.
+  - La lógica de negocio para crear y actualizar órdenes debe ser transaccional para garantizar la consistencia de los datos.
+  - Se debe notificar a los proveedores por correo electrónico cuando se genera una nueva orden. 
