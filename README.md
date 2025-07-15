@@ -46,3 +46,7 @@ Usar MCPs cuando se trabaje con:
 - **Evitar README o archivos de demo genéricos**
 - Todos los miembros deben tener acceso al repo para revisar especificaciones y tareas
 - Los archivos generados deben ser coherentes y consistentes entre sí
+
+
+## Reglas
+Estamos en windows usando powershell / Always
