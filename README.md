@@ -1,95 +1,48 @@
-# ✨ Vibe Coding: Mejores Prácticas
+# Lineamientos de Desarrollo - CursorDocs
 
-Bienvenido al manifiesto vivo de buenas prácticas de Vibe Coding: una filosofía moderna de desarrollo de software que combina simplicidad arquitectónica, colaboración humana y el uso inteligente de herramientas de inteligencia artificial.
+## 📐 Lineamientos de Arquitectura y Organización de Código
 
-Aquí buscamos velocidad con sentido, código limpio con propósito y colaboración sin fricción.
+- Mantener una arquitectura modular y simple, alineada con el archivo `arquitectura.md`
+- Ningún archivo debe superar las **1000 líneas de código**. Al sobrepasar, refactorizar
+- Seguir patrones claros y repetibles en estructura de carpetas y nombres
+- El proyecto debe estar organizado en directorios por funcionalidad (`app/api`, `app/services`, etc.)
+- Separar las funcionalidades clave como el bot de automatización en carpetas propias
+- Evitar código "spaghetti" o mezcla de lógica en múltiples capas
 
----
+## 🤖 Lineamientos para Desarrollo Asistido por IA (Claude, Gemini)
 
-## 🧭 Principios Fundamentales
+### Gestión de Tareas
+- Priorizar tareas pequeñas y atómicas, definidas en archivos `.md` en `docs/tasks/`
 
-- 🧠 Desarrollamos asistidos por IA, no reemplazados por ella.
-- 🧹 Simplicidad > Complejidad innecesaria.
-- 🔄 Flujo constante > Perfección bloqueante.
-- 🤝 Compartir es avanzar.
-- 🧪 Verifica siempre, aunque confíes.
+### Estructura de Tareas
+Incluir en cada tarea:
+- **Título, descripción, directriz de implementación**
+- **Criterios de aceptación**
+- **Plan de verificación**
+- **Dependencias técnicas**
+- **Consideraciones especiales**
 
----
+### MCPs (Model Connected Plugins)
+Usar MCPs cuando se trabaje con:
+- **Base de datos**: Supabase o equivalente
+- **Automatización de navegador**: Playwright
 
-## 🧱 Organización del Código
+### Distribución de Modelos
+- **Claude 4**: principal (~85%)
+- **Gemini 2.5 Pro**: para contexto amplio, documentación, PRD y entendimiento del proyecto general (~10%)
+- **Claude 4 Thinking**: para tareas más complejas, o errores que Claude 4 no logra resolver (~5%)
 
-- 🔹 Mantén archivos pequeños: nunca más de 1000 líneas.
-- 📂 Sigue una arquitectura predecible: cada funcionalidad en su carpeta.
-- 🪜 Separa responsabilidades: rutas, servicios, modelos, lógica de negocio.
-- 🧰 Usa convenciones de nombres consistentes (snake_case, kebab-case, etc.).
-- 🚫 Evita copiar/pegar configuraciones sin entendimiento.
+> **Nota**: Cuando existan inconsistencias entre PRD y arquitectura, prevalece la arquitectura.
 
----
+## 🧪 Testing y Validación
 
-## 🤖 Desarrollo Asistido por IA
+- Todas las tareas deben incluir **plan de verificación automático**
+- Priorizar el uso de tests automatizados (unitarios, integración, UI)
+- Checklist de verificación debe estar marcado como completado por el modelo
 
-- 🧑‍🏫 Las herramientas (Claude, Gemini, Cursor, etc.) son copilotos. A ti te toca conducir.
-- 💬 Haz prompts claros, con contexto. Ej: “Modifica arquitectura según PRD”.
-- 📄 Usa PRD.md, arquitectura.md y frontend.md como base de conocimiento.
-- 🔁 Si el resultado no es útil, repregunta o cambia de modelo.
-- 🔍 Siempre revisa el código generado antes de usarlo.
+## 📄 Documentación y Comunicación
 
----
-
-## 📋 Gestión de Tareas
-
-Cada tarea debe ser:
-
-- Atómica: una sola cosa bien hecha.
-- Descriptiva: título, propósito y contexto técnico.
-- Verificable: criterios de aceptación claros.
-- Dependiente: debe indicar si requiere otra tarea previa.
-- Ejecutable: puede ser asignada a IA o a un humano.
-
-Archivo sugerido: docs/tasks/00X_titulo_tarea.md
-
----
-
-## 🧪 Testing y Verificación
-
-- ✔️ Todo código debe tener verificación automatizada: test unitario, integración o UI.
-- 🧾 Usa checklists de validación por tarea.
-- 🧯 El sistema debe fallar rápido y claro, no silenciosamente.
-- 🛡️ Valida seguridad, rendimiento y accesibilidad.
-
----
-
-## 🧑‍💻 Cultura de Desarrollo
-
-- 💬 Habla en el código: comentarios útiles, no obvios.
-- 🧼 Revisa PRs antes de mergear, aunque lo haya hecho una IA.
-- 🔄 Prefiere iterar sobre ideas imperfectas que bloquearte.
-- 🤗 Comparte avances aunque sean parciales. La visibilidad mejora todo.
-- 🕶️ No te cases con tu código. Todo es mejorable.
-
----
-
-## 🛠️ Herramientas Usuales
-
-- Cursor.dev (IA asistida por contexto de proyecto)
-- Claude, Gemini 2.5 Pro (LLMs externos para razonamiento profundo)
-- Supabase / Azure / Firebase (servicios modernos, rápidos de montar)
-- Docker (para aislar sin complicar)
-- Playwright (para automatización de navegador robusta)
-
----
-
-## 🎯 Recordatorios de Oro
-
-- “Hecho” > “Perfecto”.
-- “Simple y funcional” > “Complejo y elegante”.
-- “IA rápida” ≠ “IA correcta”. Revisa.
-- “El contexto es el rey”. La IA sin contexto es como un dev sin brief.
-
----
-
-## 🙌 Vibe On
-
-Vibe Coding no es solo código. Es cómo lo escribimos, compartimos, y mejoramos juntos. Si algo te hace sentir lento, torpe o frustrado... probablemente se puede hacer mejor.
-
-Hazlo fluido. Hazlo claro. Hazlo en modo vibe.
+- Documentar el sistema en archivos `PRD.md`, `arquitectura.md`, `frontend.md`, etc.
+- **Evitar README o archivos de demo genéricos**
+- Todos los miembros deben tener acceso al repo para revisar especificaciones y tareas
+- Los archivos generados deben ser coherentes y consistentes entre sí
