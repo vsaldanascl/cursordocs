@@ -7,7 +7,7 @@
 - Seguir patrones claros y repetibles en estructura de carpetas y nombres
 - El proyecto debe estar organizado en directorios por funcionalidad (`app/api`, `app/services`, etc.)
 - Separar las funcionalidades clave como el bot de automatización en carpetas propias
-- Evitar código "spaghetti" o mezcla de lógica en múltiples capas
+
 
 ## 🤖 Lineamientos para Desarrollo Asistido por IA (Claude, Gemini)
 
