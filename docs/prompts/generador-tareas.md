@@ -1,4 +1,4 @@
-# 🛠️ Prompt Mejorado: Generador de Archivos de Tareas con Dependencias
+# 🛠️ Prompt: Generador de Archivos de Tareas con Dependencias
 
 A partir de la siguiente documentación de entrada:
 
