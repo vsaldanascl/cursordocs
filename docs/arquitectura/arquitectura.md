@@ -205,7 +205,7 @@ scikit-learn==1.3.2       # Machine learning
 - **Supabase**: Base de datos PostgreSQL en la nube
 - **Cloud Storage**: Almacenamiento de archivos en la nube
 - **External APIs**: Integración con servicios externos
-- **Python 3.13**: Runtime principal
+- **Python 3.12**: Runtime principal
 
 ---
 
@@ -811,7 +811,7 @@ python app.py
 ### 15.2 Docker (Opcional)
 
 ```dockerfile
-FROM python:3.13-slim
+FROM python:3.12-slim
 WORKDIR /app
 COPY requirements.txt .
 RUN pip install -r requirements.txt
